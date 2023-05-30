@@ -1,9 +1,10 @@
-var gamesQuantity = 3;
+var gamesQuantity = 1;
 var employeesQuantity = 6;
 
 function start()
 {
-    var gameLinks = ["", "https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s", ""]
+    var gameLinks = ["https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s"]
+
     for(i=1; i<=gamesQuantity; i++)
     {
         let gameBlock = $('<div class="GameBlock" id="gameBlock'+i+'">').appendTo('#games');
