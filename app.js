@@ -50,13 +50,13 @@ function scrollToSection(nazwa) {
     var section = document.getElementById(nazwa); 
       var windowHeight = window.innerHeight; 
       var scrollToPos;
-      if(window.innerWidth > 767)
+      if(window.innerWidth > 1000)
       {
         scrollToPos = section.offsetTop - (windowHeight / 4) + (section.offsetHeight / 2); 
       }
       else 
       {
-        scrollToPos = section.offsetTop - (windowHeight / 6) + (section.offsetHeight / 2);
+        scrollToPos = section.offsetTop - (windowHeight / 4) + (section.offsetHeight / 2);
       } 
       window.scrollTo({top: scrollToPos, behavior: 'smooth'}); 
   }
