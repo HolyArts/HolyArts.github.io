@@ -255,10 +255,11 @@ body
   /* Styl przycisków w pasku nawigacyjnym */
   .navbar #buttons p {
     letter-spacing: 0.1vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #161717;
     text-align: center;
-    padding: 1vw 2vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1vw 1.5vh;
   }
 
   /* Efekt hover na przyciskach */
@@ -296,11 +297,13 @@ body
   .Container h1
   {
     font-size: 15vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 
   .Container h2
   {
-    font-size: 8vw;
+    font-size: 6vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 
   .GameBlock
