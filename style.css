@@ -269,15 +269,16 @@ body
 
   #logoDocument
   {
-    width: 80vw; 
+    display: inline-block;
+    width: 60vw; 
     padding-top: 5vh;
   }
 
   .Container
   {
     z-index: 1;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -302,7 +303,7 @@ body
 
   .Container h2
   {
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 
