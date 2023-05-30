@@ -3,10 +3,11 @@ var employeesQuantity = 6;
 
 function start()
 {
+    var gameLinks = ["", "https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s", ""]
     for(i=1; i<=gamesQuantity; i++)
     {
         let gameBlock = $('<div class="GameBlock" id="gameBlock'+i+'">').appendTo('#games');
-        let gameLink = $('<a href="game'+i+'.html">').appendTo(gameBlock);
+        let gameLink = $('<a href='+gameLinks[i-1]+'>').appendTo(gameBlock);
         let gameImage = $('<div class="GameImage" id="gameImage'+i+'">').appendTo(gameLink);
         gameImage.html('<img src="gameBlocks/game'+i+'.png" alt="game'+i+'">');
         let gameLogo = $('<div class="GameLogo" id="gameLogo'+i+'">').appendTo(gameImage);
