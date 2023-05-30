@@ -1,0 +1,62 @@
+html
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #161717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #169db8 0%, #00000000 20%, #00000000 80%, #169db8);
+}
+
+.navbar {
+  width: 100vw;
+  top: 0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  
+}
+
+.navbar img
+{
+  width: 20%;
+  margin-top: 2%;
+}
+
+.navbar #buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+
+/* Styl przycisków w pasku nawigacyjnym */
+.navbar #buttons p {
+  font-family: "Bebas Neue";
+  letter-spacing: 0.1vw;
+  font-size: 2vw;
+  display: block;
+  color: #666666;
+  text-align: center;
+  padding: 2vw 3vh;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Efekt hover na przyciskach */
+.navbar #buttons p:hover {
+  color: #FFFFFF;
+}
+
+

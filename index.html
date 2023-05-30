@@ -2,10 +2,11 @@
 <html>
 <head>
   <title>Holy Arts™</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="style_mobile.css">
   <link rel="icon" href="HolyArtsFavicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="HolyArtsFavicon.ico" type="image/x-icon">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 
   <!-- Pasek nawigacyjny -->
   <div class="navbar">
-    <img src="HolyLogoNapis.png" style="height: 100%;"/>
+    <img src="HolyLogoNapis.png">
     <div id="buttons">
       <p onclick="scrollToSection('naszeGry')">Nasze gry</p>
       <p onclick="scrollToSection('studio')">Studio</p>
@@ -28,9 +29,9 @@
     <!--Ten div pełni funkcję separatora-->
   </div>
 
-  <img src="HolyLogo.png" style="position:fixed; top:0; width: 100%;  filter: blur(70px);" />
+  <img src="HolyLogo.png" style="position:fixed; top:0; width: 100vw;  filter: blur(70px);" />
 
-  <!-- Kontener z zdjęciami gier -->
+  <!-- Kontener z zdjęciami gier  -->
   <div class="Container" >
     <h1 id="naszeGry">NASZE GRY</h1>
     <div id="games"></div>

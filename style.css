@@ -7,43 +7,42 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
 }
 
 /* Styl paska nawigacyjnego */
 .navbar {
+  /* background-image: linear-gradient(to left, #104e67 0%, #139fba 25%, #139fba 75%, #104e67 100%); */
+  /* background-image: linear-gradient(to right, #104e67AA 0%, #139fbaAA 25%, #9c9c9cAA); */
   background-image: linear-gradient(to right, #00000000 0%, #00000000 18%, #FFFFFF99 50%, #FFFFFF99);
   align-items: center;
   overflow: hidden;
   position: fixed;
   z-index: 2;
-  width: 100vw;
-  margin: 0;
+  top: 0;
+  width: 100%;
   display: flex; /* Używamy flexboxa do centrowania przycisków */
   justify-content: space-between; /* Centrowanie w poziomie */
 }
 
 .navbar img
 {
-  width: 10vmin;
-  left: 0;
-  margin-right: 10%;
-  margin: 2%;
+  width: 200px;
+  padding: 50px;
 }
 
 .navbar #buttons{
   top: 0;
-  margin-left: 50vmin;
-  margin-right: 1vmin;
+  padding-right: 50px;
+  width: 100%;
   display: flex; /* Używamy flexboxa do centrowania przycisków */
-  justify-content: left; /* Centrowanie w poziomie */
+  justify-content: right; /* Centrowanie w poziomie */
 }
 
 /* Styl przycisków w pasku nawigacyjnym */
 .navbar #buttons p {
   font-family: "Bebas Neue";
-  letter-spacing: 0.1vw;
-  font-size: 2vw;
+  letter-spacing: 5px;
+  font-size: 25px;
   display: block;
   color: #161717;
   text-align: center;
@@ -173,3 +172,65 @@ body
   100% {transform: rotate(0deg);}
 }
 
+@media only screen and (max-width: 767px) {
+  html
+  {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    background-color: #161717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #169db8 0%, #00000000 20%, #00000000 80%, #169db8);
+  }
+
+  .navbar {
+    width: 100vw;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    
+  }
+
+  .navbar img
+  {
+    width: 20%;
+    margin-top: 2%;
+  }
+
+  .navbar #buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+  }
+
+  /* Styl przycisków w pasku nawigacyjnym */
+  .navbar #buttons p {
+    font-family: "Bebas Neue";
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+    display: block;
+    color: #666666;
+    text-align: center;
+    padding: 2vw 3vh;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  /* Efekt hover na przyciskach */
+  .navbar #buttons p:hover {
+    color: #FFFFFF;
+  } 
+}
