@@ -1,7 +1,81 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Holy Arts™</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <canvas id="unity-canvas" width="960" height="600"></canvas>
+  <script src="Planety/TemplateData/UnityProgress.js"></script>
+  <script src="Planety/Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unity-canvas", "Planety/Build/MyUnityGame.json", {onProgress: UnityProgress});
+  </script>
+
+  <!-- Skrypty js dołączone do body-->
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Pasek nawigacyjny -->
+  <div class="navbar">
+    <img src="HolyLogoNapis.png" style="height: 100%;"/>
+    <div id="buttons">
+      <p onclick="scrollToSection('naszeGry')">Nasze gry</p>
+      <p onclick="scrollToSection('studio')">Studio</p>
+      <p onclick="scrollToSection('skladZespolu')">Skład zespołu</p>
+      <p onclick="scrollToSection('kontakt')">Kontakt</p>
+    </div>
+  </div>
+
+  <div style="height: 300px;">
+    <!--Ten div pełni funkcję separatora-->
+  </div>
+
+  <img src="HolyLogo.png" style="position:fixed; top:0; width: 165vh;  filter: blur(70px);" />
+
+  <!-- Kontener z zdjęciami gier -->
+  <div class="Container" >
+    <h1 id="naszeGry">NASZE GRY</h1>
+    <div id="games"></div>
+  </div>
+
+  <div class="Container">
+    <h1 id="studio">STUDIO</h1>
+    <h2>
+      Studio 
+      <span style="color: #169db7;">Holy</span>
+      <span style="color: #9c9c9c;">Arts</span>
+      powstało w 2021 roku jako fuzja dwóch zespołów biorących udział w ogólnokrajowym<br>
+      konkursie produkcji gier <a href="cyberiada.info">Cyberiada 2021</a><br>
+      <img src="HolyLogo.png" style="width: 400px; padding-top: 40px;">
+    </h2>
+  </div>
+
+  
+
+  <!-- Kontener z zdjęciami gier -->
+  <div class="Container">
+    <h1 id="skladZespolu">Skład zespołu</h1>
+    <h2>
+      Nasz zespół składa się obecnie z następujących osób:
+      <div id="employees"></div>
+    </h2>
+  </div>
+
+  <div class="Container">
+    <h1 id="kontakt">Kontakt</h1>
+    <h2>email : holyartsgames@gmail.com</h2>
+    <h2>tel : +48 731 291 516</h2>
+    <h2><a href="https://www.facebook.com/profile.php?id=100086600717341">Facebook</a></h2>
+    <h2><a href="https://twitter.com/HolyArts2">Twitter</a></h2>
+    <h2><a href="https://www.instagram.com/holyartsgames/">Instagram</a></h2>
+    <h2><a href="https://www.twitch.tv/holyarts">Twitch</a></h2>
+    <h2><a href="https://www.tiktok.com/@holyartsgames">TikTok</a></h2>
+  </div>
+
+  
+  
+
 </body>
 </html>

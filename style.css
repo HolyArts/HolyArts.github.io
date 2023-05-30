@@ -1,0 +1,174 @@
+/* Resetowanie marginesów i paddingów dla całej strony */
+body
+{
+  background-color: #161717;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styl paska nawigacyjnego */
+.navbar {
+  /* background-image: linear-gradient(to left, #104e67 0%, #139fba 25%, #139fba 75%, #104e67 100%); */
+  /* background-image: linear-gradient(to right, #104e67AA 0%, #139fbaAA 25%, #9c9c9cAA); */
+  background-image: linear-gradient(to right, #00000000 0%, #00000000 18%, #FFFFFF99 50%, #FFFFFF99);
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  display: flex; /* Używamy flexboxa do centrowania przycisków */
+  justify-content: space-between; /* Centrowanie w poziomie */
+}
+
+.navbar img
+{
+  width: 200px;
+  padding: 50px;
+}
+
+.navbar #buttons{
+  top: 0;
+  padding-right: 50px;
+  width: 100%;
+  display: flex; /* Używamy flexboxa do centrowania przycisków */
+  justify-content: right; /* Centrowanie w poziomie */
+}
+
+/* Styl przycisków w pasku nawigacyjnym */
+.navbar #buttons p {
+  font-family: "Bebas Neue";
+  letter-spacing: 5px;
+  font-size: 25px;
+  display: block;
+  color: #161717;
+  text-align: center;
+  padding: 17px 30px; /* Wysokość i szerokość przycisków */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Efekt hover na przyciskach */
+.navbar #buttons p:hover {
+  color: #FFFFFF;
+}
+
+/* Styl kontenera z zdjęciami gier */
+.Container
+{
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Container #games {
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Container #employees {
+  margin-top: 30px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Container h1
+{
+  opacity: 80%;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  letter-spacing: 5px;
+}
+
+.Container a
+{
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.Container a:hover
+{
+  text-decoration: none;
+  color: #169db7;
+}
+
+.Container h2
+{
+  opacity: 80%;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+}
+
+.GameBlock
+{
+  width: 300px;
+  margin: 10px;
+}
+
+/* Styl zdjęć gier */
+.GameImage{
+  display: flex;
+  justify-content: center; /* Wycentrowanie wzdłuż osi poziomej */
+  align-items: center; /* Wycentrowanie wzdłuż osi pionowej */
+  position: relative;
+  object-fit: cover;
+  box-shadow: 0 0 5px #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Przejście transformacji i cienia z czasem trwania 0.3s i efektem 'ease' */
+}
+
+.GameImage img
+{
+  width: 100%;
+}
+
+/* Efekt hover na zdjęciach gier */
+.GameImage:hover {
+  box-shadow: 0 0 0px #0074B2; /* Dodanie cienia */
+  animation: shake 0.5s ease-in-out; /* Dodanie animacji chwiania się */
+}
+
+.GameLogo
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0,0,0,0.9);
+  transition: background-color 0.3s ease;
+}
+
+.GameLogo:hover
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+
+}
+
+/* Animacja chwiania się */
+@keyframes shake {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(1deg)}
+  100% {transform: rotate(0deg);}
+}
+
