@@ -7,42 +7,43 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 /* Styl paska nawigacyjnego */
 .navbar {
-  /* background-image: linear-gradient(to left, #104e67 0%, #139fba 25%, #139fba 75%, #104e67 100%); */
-  /* background-image: linear-gradient(to right, #104e67AA 0%, #139fbaAA 25%, #9c9c9cAA); */
   background-image: linear-gradient(to right, #00000000 0%, #00000000 18%, #FFFFFF99 50%, #FFFFFF99);
   align-items: center;
   overflow: hidden;
   position: fixed;
   z-index: 2;
-  top: 0;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
   display: flex; /* Używamy flexboxa do centrowania przycisków */
   justify-content: space-between; /* Centrowanie w poziomie */
 }
 
 .navbar img
 {
-  width: 200px;
-  padding: 50px;
+  width: 10vmin;
+  left: 0;
+  margin-right: 10%;
+  margin: 2%;
 }
 
 .navbar #buttons{
   top: 0;
-  padding-right: 50px;
-  width: 100%;
+  margin-left: 50vmin;
+  margin-right: 1vmin;
   display: flex; /* Używamy flexboxa do centrowania przycisków */
-  justify-content: right; /* Centrowanie w poziomie */
+  justify-content: left; /* Centrowanie w poziomie */
 }
 
 /* Styl przycisków w pasku nawigacyjnym */
 .navbar #buttons p {
   font-family: "Bebas Neue";
-  letter-spacing: 5px;
-  font-size: 25px;
+  letter-spacing: 0.1vw;
+  font-size: 2vw;
   display: block;
   color: #161717;
   text-align: center;
