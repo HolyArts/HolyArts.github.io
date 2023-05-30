@@ -67,7 +67,7 @@ body
 
 /* Efekt hover na przyciskach */
 .navbar #buttons p:hover {
-  color: #000000;
+  color: #161717;
 }
 
 #logoDocument
@@ -256,7 +256,7 @@ body
   .navbar #buttons p {
     letter-spacing: 0.1vw;
     font-size: 4vw;
-    color: #000000;
+    color: #161717;
     text-align: center;
     padding: 1vw 2vh;
   }
