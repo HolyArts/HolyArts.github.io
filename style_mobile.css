@@ -5,6 +5,15 @@ html
   padding: 0;
 }
 
+#bkgLogo
+{
+  display: none;
+  position:fixed; 
+  top:0; 
+  width: 100vw;  
+  filter: blur(70px);
+}
+
 body {
   overflow-x: hidden;
   width: 100%;

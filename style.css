@@ -9,11 +9,25 @@ body
   align-items: center;
 }
 
+#bkgLogo
+{
+  position:fixed; 
+  top:0; 
+  width: 100vw;  
+  filter: blur(80px);
+}
+
+#separator
+{
+    height: 40vh;
+}
+
 /* Styl paska nawigacyjnego */
 .navbar {
   /* background-image: linear-gradient(to left, #104e67 0%, #139fba 25%, #139fba 75%, #104e67 100%); */
   /* background-image: linear-gradient(to right, #104e67AA 0%, #139fbaAA 25%, #9c9c9cAA); */
-  background-image: linear-gradient(to right, #00000000 0%, #00000000 18%, #FFFFFF99 50%, #FFFFFF99);
+  /* background-image: linear-gradient(to right, #00000000 0%, #00000000 18%, #FFFFFF99 50%, #FFFFFF99); */
+  background-color: #169db8;
   align-items: center;
   overflow: hidden;
   position: fixed;
@@ -26,8 +40,8 @@ body
 
 .navbar img
 {
-  width: 200px;
-  padding: 50px;
+  height: 15vh;
+    
 }
 
 .navbar #buttons{
@@ -44,7 +58,7 @@ body
   letter-spacing: 5px;
   font-size: 25px;
   display: block;
-  color: #161717;
+  color: #FFFFFF;
   text-align: center;
   padding: 17px 30px; /* Wysokość i szerokość przycisków */
   text-decoration: none;
@@ -53,7 +67,14 @@ body
 
 /* Efekt hover na przyciskach */
 .navbar #buttons p:hover {
-  color: #FFFFFF;
+  color: #000000;
+}
+
+#logoDocument
+{
+  display: none;
+  width: 400px; 
+  padding-top: 40px;
 }
 
 /* Styl kontenera z zdjęciami gier */
@@ -171,7 +192,8 @@ body
   100% {transform: rotate(0deg);}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) 
+{
   html
   {
     height: 100%;
@@ -179,14 +201,29 @@ body
     padding: 0;
   }
 
+  #bkgLogo
+  {
+    display: none;
+    position:fixed; 
+    top:0; 
+    width: 100vw;  
+    filter: blur(70px);
+  }
+
   body {
+    overflow-x: hidden;
     width: 100%;
     margin: 0;
     background-color: #161717;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right, #169db8 0%, #00000000 20%, #00000000 80%, #169db8);
+    background-image: linear-gradient(to right, #169db855 0vw, #00000000 1vw, #00000000 99vw, #169db855);
+  }
+
+  #separator
+  {
+    display: 1vh;
   }
 
   .navbar {
@@ -198,13 +235,13 @@ body
     align-items: center;
     flex-direction: column;
     z-index: 2;
-    
+    background-image: none;
+    background-color: #169db8;
   }
 
   .navbar img
   {
-    width: 20%;
-    margin-top: 2%;
+    display: none;
   }
 
   .navbar #buttons{
@@ -217,19 +254,58 @@ body
 
   /* Styl przycisków w pasku nawigacyjnym */
   .navbar #buttons p {
-    font-family: "Bebas Neue";
     letter-spacing: 0.1vw;
-    font-size: 2vw;
-    display: block;
-    color: #666666;
+    font-size: 4vw;
+    color: #000000;
     text-align: center;
-    padding: 2vw 3vh;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    padding: 1vw 2vh;
   }
 
   /* Efekt hover na przyciskach */
   .navbar #buttons p:hover {
     color: #FFFFFF;
-  } 
+  }
+
+  #logoDocument
+  {
+    width: 80vw; 
+    padding-top: 5vh;
+  }
+
+  .Container
+  {
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Container #games {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+
+  .Container #employees {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+
+  .Container h1
+  {
+    font-size: 15vw;
+  }
+
+  .Container h2
+  {
+    font-size: 8vw;
+  }
+
+  .GameBlock
+  {
+    width: 50vw;
+    margin: 10px;
+  }
 }
