@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to right, #169db8 0%, #00000000 20%, #00000000 80%, #169db8);
+  background-image: linear-gradient(to right, #169db8 0vw, #00000000 20vw, #00000000 80vw, #169db8);
 }
 
 .navbar {
