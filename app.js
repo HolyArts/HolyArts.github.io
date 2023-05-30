@@ -4,7 +4,7 @@ var employeesQuantity = 6;
 function start()
 {
     scrollToSection('naszeGry');
-    
+
     var gameLinks = ["https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s"]
 
     for(i=1; i<=gamesQuantity; i++)
@@ -52,7 +52,7 @@ function scrollToSection(nazwa) {
       var scrollToPos;
       if(window.innerWidth > 767)
       {
-        scrollToPos = section.offsetTop - (windowHeight / 2.5) + (section.offsetHeight / 2); 
+        scrollToPos = section.offsetTop - (windowHeight / 4) + (section.offsetHeight / 2); 
       }
       else 
       {
