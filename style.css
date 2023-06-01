@@ -97,6 +97,11 @@ body
   flex-wrap: wrap;
 }
 
+#uwaga
+{
+  display: none;
+}
+
 .Container #employees {
   margin-top: 30px;
   width: 1200px;
@@ -290,6 +295,11 @@ body
     flex-wrap: none;
   }
 
+  #uwaga
+  {
+    display: block;
+  }
+  
   .Container #employees {
     flex-direction: column;
     flex-wrap: none;
