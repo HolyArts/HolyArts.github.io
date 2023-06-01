@@ -1,11 +1,11 @@
-var gamesQuantity = 1;
+var gamesQuantity = 2;
 var employeesQuantity = 6;
 
 function start()
 {
     scrollToSection('naszeGry');
 
-    var gameLinks = ["https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s"]
+    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s"]
 
     for(i=1; i<=gamesQuantity; i++)
     {
