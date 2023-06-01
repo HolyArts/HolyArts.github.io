@@ -5,7 +5,7 @@ function start()
 {
     scrollToSection('naszeGry');
 
-    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.gamearter.com/game/storm-of-snow/v2?key=dcvtyb82bv3s"]
+    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.gamearter.com/game/storm-of-snow/"]
 
     for(i=1; i<=gamesQuantity; i++)
     {
