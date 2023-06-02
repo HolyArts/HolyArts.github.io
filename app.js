@@ -26,17 +26,17 @@ function start()
         gameImage.css('box-shadow', 'none');
         switch(i)
         {
-            case 1: $("<h2>Franciszek Barszcz<br>3D Artist</h2>").appendTo(gameBlock);  
+            case 1: $("<h2>Franciszek Barszcz<br><span style=\"color: #ff881c;\">Graphic Designer<span></h2>").appendTo(gameBlock);  
             break;
-            case 2: $("<h2>Sebastian Prościński<br>Developer</h2>").appendTo(gameBlock); 
+            case 2: $("<h2>Sebastian Prościński<br><span style=\"color: #a377da;\">Developer<span></h2>").appendTo(gameBlock); 
             break;
-            case 3: $("<h2>Wiktoria Ozner<br>2D Artist, Game Designer</h2>").appendTo(gameBlock); 
+            case 3: $("<h2>Wiktoria Ozner<br><span style=\"color: #78b159;\">Game Designer<span><br><span style=\"color: #ff881c;\">Graphic Designer<span></h2>").appendTo(gameBlock); 
             break;
-            case 4: $("<h2>Patryk Komsta<br>Developer</h2>").appendTo(gameBlock); 
+            case 4: $("<h2>Patryk Komsta<br><span style=\"color: #a377da;\">Developer<span></h2>").appendTo(gameBlock); 
             break;
-            case 5: $("<h2>Krzysztof Szwedkowicz<br>Developer</h2>").appendTo(gameBlock); 
+            case 5: $("<h2>Krzysztof Szwedkowicz<br><span style=\"color: #a377da;\">Developer<span></h2>").appendTo(gameBlock); 
             break;
-            case 6: $("<h2>Mikołaj Dąbrowski<br>3D Artist</h2>").appendTo(gameBlock); 
+            case 6: $("<h2>Mikołaj Dąbrowski<br><span style=\"color: #ff881c;\">Graphic Designer<span></h2>").appendTo(gameBlock); 
             break;
         }
         gameImage.html('<img src="employeeBlocks/employee'+i+'.png" alt="game'+i+'">');
