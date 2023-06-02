@@ -20,8 +20,10 @@ function start()
     for(i=1; i<=employeesQuantity; i++)
     {
         let gameBlock = $('<div class="GameBlock" id="gameBlock'+i+'">').appendTo('#employees');
+        
         let gameLink = $('<a href="employee'+i+'.html">').appendTo(gameBlock);
         let gameImage = $('<div class="GameImage" id="employeeImage'+i+'">').appendTo(gameLink);
+        gameImage.css('box-shadow', 'none');
         switch(i)
         {
             case 1: $("<h2>Franciszek Barszcz<br>3D Artist</h2>").appendTo(gameBlock);  
