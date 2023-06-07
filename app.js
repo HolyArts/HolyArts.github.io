@@ -3,7 +3,7 @@ var employeesQuantity = 6;
 
 function start()
 {
-    scrollToSection('naszeGry');
+    scrollToSection('info');
 
     var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.gamearter.com/game/storm-of-snow/"]
 
