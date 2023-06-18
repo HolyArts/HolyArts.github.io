@@ -3,9 +3,9 @@ var employeesQuantity = 6;
 
 function start()
 {
-    scrollToSection('info');
+    scrollToSection('naszeGry');
 
-    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.gamearter.com/game/storm-of-snow/"]
+    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.pacogames.com/gry-akcji/storm-of-snow"]
 
     for(i=1; i<=gamesQuantity; i++)
     {
