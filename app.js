@@ -1,11 +1,13 @@
-var gamesQuantity = 2;
+var gamesQuantity = 3;
 var employeesQuantity = 6;
 
 function start()
 {
     scrollToSection('naszeGry');
 
-    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1","https://www.pacogames.com/gry-akcji/storm-of-snow"]
+    var gameLinks = ["https://holyartsgames.itch.io/snowstorm-1",
+                     "https://www.pacogames.com/gry-akcji/storm-of-snow",
+                     "https://ablaabla.itch.io/dont-drown-please"]
 
     for(i=1; i<=gamesQuantity; i++)
     {
